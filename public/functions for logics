@@ -1,0 +1,45 @@
+// ================FILTER_BY_PRICE_Less==============
+
+const filterByPrice = () => {
+  const result = products.filter((curData) => {
+    return curData.price < 10;
+  });
+  setFilteredResults(result);
+};
+
+// ==================FILTER_BY_PRICE_GREATER==============
+
+const filterByPriceGreater = () => {
+  const result = products.filter((curData) => {
+    return curData.price > 50;
+  });
+  setFilteredResults(result);
+};
+
+// =====================PRICE_GREATER_THAN_100===============
+
+const priceGreaterThanHundred = () => {
+  const result = products.filter((curData) => {
+    return curData.price > 100;
+  });
+  setFilteredResults(result);
+};
+
+// ========================SEARCH_BY_MIN========================
+
+const filter_min = (item) => {
+  console.log("ggg", item);
+  const result = products.filter((curData) => {
+    return curData.price <= item;
+  });
+  setFilteredResults(result);
+};
+
+// ======================SEARCH_BY_MAX========================
+const filter_max = (item) => {
+  // console.log("ggg", item);
+  const result = products.filter((curData) => {
+    return curData.price >= item;
+  });
+  setFilteredResults(result);
+};

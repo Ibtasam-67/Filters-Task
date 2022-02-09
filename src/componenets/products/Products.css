@@ -1,0 +1,16 @@
+.card_height {
+  height: 400px !important;
+  margin-top: 10px;
+}
+
+.product_img {
+  width: 50%;
+  margin-left: 70px;
+  height: 200px;
+}
+
+@media (max-width: 768px) {
+  .product_img {
+    margin-left: none;
+  }
+}
